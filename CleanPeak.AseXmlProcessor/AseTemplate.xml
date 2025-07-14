@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ase:aseXML xmlns:ase="urn:aseXML:{version}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:aseXML:{version} http://www.nemmco.com.au/aseXML/schemas/{version}/aseXML_{version}.xsd">
+	<Header>
+		<From></From>
+		<To></To>
+		<MessageID></MessageID>
+		<MessageDate></MessageDate>
+		<TransactionGroup></TransactionGroup>
+		<Priority></Priority>
+		<Market>NEM</Market>
+	</Header>
+</ase:aseXML>

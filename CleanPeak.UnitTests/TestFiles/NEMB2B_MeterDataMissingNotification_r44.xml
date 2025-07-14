@@ -1,0 +1,34 @@
+<ase:aseXML xmlns:ase="urn:aseXML:r44" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="urn:aseXML:r44 http://www.nemmco.com.au/aseXML/schemas/r44/aseXML_r44.xsd
+">
+	<Header>
+		<From>AGLE</From>
+		<To>INTEGM </To>
+		<MessageID>AGLE-MSG-123456789</MessageID>
+		<MessageDate>2005-10-15T09:30:50+10:00</MessageDate>
+		<TransactionGroup>MTRD</TransactionGroup>
+		<Priority>Medium</Priority>
+		<Market>NEM</Market>
+	</Header>
+	<Transactions>
+		<Transaction transactionID="AGLE-TNS-123456789" transactionDate="2005-10-15T09:30:47+10:00">
+			<MeterDataMissingNotification version="r14">  
+				<MissingMeterData xsi:type="ase:ElectricityProvideMeterRequestData" version="r17">
+					<NMI checksum="9">6776765862</NMI>
+					<NMIStandingData xsi:type="ase:ElectricityStandingData" version="r43">
+						<RoleAssignments>
+							<RoleAssignment>
+								<Role>FRMP</Role>
+							</RoleAssignment>
+						</RoleAssignments>
+					</NMIStandingData>
+					<RequestPeriod>
+						<BeginDate>2005-09-10</BeginDate>
+						<EndDate>2005-09-12</EndDate>
+					</RequestPeriod>
+				</MissingMeterData>
+			</MeterDataMissingNotification>
+		</Transaction>
+	</Transactions>
+</ase:aseXML>

@@ -1,0 +1,74 @@
+# Ignore Visual Studio temporary files, build results, and
+# common .NET artifacts
+
+## Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored if you use PackageReference
+packages/
+# NuGet v3's project.json files
+project.lock.json
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Other common offenders
+*.log
+*.DS_Store
+*.vs/
+TestResults/
+
+# Resharper
+*.DotSettings.user
+_ReSharper*/
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+
+# Mac system files
+.DS_Store
+
+# Python cache
+__pycache__/
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.pidb
+*.svclog
+*.scc
+*.orig
+*.rej
+*.bak
+*.backup
+*.tmp
+*.temp
+*.diff
+*.patch
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.sublime-project
+
+# End of file
