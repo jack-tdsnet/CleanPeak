@@ -19,17 +19,18 @@ namespace CleanPeak.AseXmlProcessor
 
             aseNode.AppendChild(transactions);
             
+            var fromParticipantId = ApplicationConfiguration.ParticipantId;
             var tranDateXml = XmlHelper.ToXmlDateTime(DateTime.Now);
 
-            XmlHelper.SetNode(ref doc, "From", ApplicationConfiguration.ParticipantId);
+            XmlHelper.SetNode(ref doc, "From", fromParticipantId);
             XmlHelper.SetNode(ref doc, "To", toParticipantId);
-            XmlHelper.SetNode(ref doc, "MessageID", $"CLEANPEAK-MSG-{pmdId}");
+            XmlHelper.SetNode(ref doc, "MessageID", $"{fromParticipantId}-MSG-{pmdId}");
             XmlHelper.SetNode(ref doc, "TransactionGroup", "MTRD");
             XmlHelper.SetNode(ref doc, "Priority", "Medium");
             XmlHelper.SetNode(ref doc, "MessageDate", tranDateXml);
 
             var transaction = doc.CreateElement("Transaction");
-            transaction.SetAttribute("transactionID", $"CLEANPEAK-TRAN-{pmdId}");
+            transaction.SetAttribute("transactionID", $"{fromParticipantId}-TRAN-{pmdId}");
             transaction.SetAttribute("transactionDate", tranDateXml);
 
             var meterDataMissingNotification = doc.CreateElement("MeterDataMissingNotification");

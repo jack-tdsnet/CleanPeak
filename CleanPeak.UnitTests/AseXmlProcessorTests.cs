@@ -2,7 +2,7 @@ using CleanPeak.AseXmlProcessor;
 
 namespace CleanPeak.UnitTests
 {
-    public class AseAckProcessorTest
+    public class AseXmlProcessorTests
     {
         private const string TestFilesFolder = "TestFiles";
 
